@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>My recipes</title>
+</head>
+<body dir="rtl">
+
+	<div class="main-page">
+		<div id="tags" class="header-menu" dir="rtl">
+			<nav class="menu">
+				<ul>
+					<li><a id="home-btn" href="#home">בית</a></li>
+					<li><a id="sweets-btn" href="#sweets">מתוקים</a></li>
+				  	<li><a href="#food">אוכל</a></li>
+				</ul>
+
+				<span id="date_time"></span>
+			</nav>
+			<div id="home">
+				<ul>
+					<li>test3</li>
+				</ul>
+			</div>
+
+			<div id="sweets" class="sweets-clk">
+				<ul class="page-sweets">
+					<li><a href="#popup-cupcake">
+						<img id="cupcake" alt="" src='images/cupcake_filled.png' onmouseover="this.src='images/cupcake.png';"
+						onmouseout="this.src='images/cupcake_filled.png';" onclick="targetClass()"/></a>עוגות</li>
+					<li><a href="#popup-cookies">
+						<img id="cookies" alt="" src="images/cookies_filled.png" onmouseover="this.src='images/cookies.png';"
+							 onmouseout="this.src='images/cookies_filled.png';" /></a>עוגיות</li>
+					<li><a href="#popup-mixer">
+						<img id="mixer" alt="" src="images/mixer_filled.png" onmouseover="this.src='images/mixer.png';"
+							 onmouseout="this.src='images/mixer_filled.png';" /></a>מיקסר</li>
+				</ul>
+
+				<div href="popup-cupcake">
+					<ul class="list-body">
+						<li>test1</li>
+						<li>test2</li>
+						<li>test3</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="food">
+				<ul>
+					<li>test3</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--<script type="text/javascript"> window.onload = date_time();</script>-->
+
+	<script src="main.js"></script>
+</body>
+</html>
+
+
+
