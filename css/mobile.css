@@ -1,4 +1,31 @@
 @media (max-width: 500px) {
+    nav {
+        width: 100%;
+        height: 67px;
+        background: #70e588;
+        vertical-align: middle;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu li a {
+        display: none;
+    }
+
+    #sweets {
+        flex-direction: row;
+        align-content: center;
+        background: #169cff;
+        width: 100%;
+        height: 100%;
+        margin: auto 0;
+        border-radius: 0;
+    }
+
     .page-sweets {
         display: flex;
         flex-direction: column;
@@ -10,6 +37,10 @@
         -moz-animation: fadein 2s; /* Firefox */
         -webkit-animation: fadein 2s; /* Safari and Chrome */
         -o-animation: fadein 2s; /* Opera */
+    }
+
+    .page-sweets > li {
+        color: transparent;
     }
 
     #date_time {
