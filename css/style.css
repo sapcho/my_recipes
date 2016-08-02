@@ -18,16 +18,16 @@ body {
     width: 100%;
     font-size: 1.5em;
     /*background: #169cff;*/
-
 }
 
 nav {
-    width: 80%;
-    height: 40px;
+    width: 40%;
+    height: 67px;
     background: #70e588;
     vertical-align: middle;
-    /*justify-content: space-around;*/
     margin: 0 auto;
+    border-radius: 10px;
+
 }
 
 .menu {
@@ -41,29 +41,45 @@ nav {
     display: flex;
     justify-content: flex-end;
     margin: 1%;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 ul {
-    width: 20%;
+    width: 25%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 0;
+    list-style-type: none;
     padding-right: 10px;
-    list-style: none;
 }
 
-li a {
+.menu li a {
+    height: 50px;
+    width: 50px;
     font-weight: 900;
-    text-decoration: none;
     color: #f85e35;
-    vertical-align: -webkit-baseline-middle;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
 }
 
-li a:hover {
-    color: #169cff;
+li a.active {
+    background-color: #4CAF50;
+    color: white;
 }
+
+li a:hover:not(.active) {
+    /*background-color: #169cff;*/
+    color: white;
+}
+
+li a:first-child:hover {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*li a:hover {*/
+    /*color: #169cff;*/
+/*}*/
 
 .header-menu div, .sweets-clk div {
     display: none;
@@ -76,9 +92,6 @@ li a:hover {
 }
 
 #home {
-    flex-direction: row;
-    align-content: center;
-    background: #169cff;
     width: 81%;
     height: 500px;
     margin: 15px auto 0;
@@ -93,6 +106,40 @@ li a:hover {
     height: 500px;
     margin: 15px auto 0;
     border: 0;
+    border-radius: 10px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .page-sweets a {
@@ -103,7 +150,7 @@ li a:hover {
 
 .page-sweets > li {
     margin: 0 auto;
-    text-align: end;
+    text-align: center;
     color: #FFFFFF;
     font-size: 1.3em;
     font-weight: 700;
@@ -117,11 +164,16 @@ li a:hover {
     align-content: center;
     width: 80%;
     padding-top: 5%;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
 }
 
 .page-sweets img {
     margin-bottom: 10px;
-    width: 150%;
+    width: 156px;
+    height: 156px;
 }
 
 .sweets-clk div:target{
