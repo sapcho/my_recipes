@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+    .page-sweets {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-content: center;
+        width: 80%;
+        padding-top: 5%;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+    }
+
+    #date_time {
+        display: none;
+    }
+}
