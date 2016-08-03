@@ -48,8 +48,22 @@ function date_time()
 /*new date*/
 
 /*targetClass*/
-function targetClass() {
-    document.body.style.backgroundColor = "#f3f3f3";
-    document.body.style.backgroundImage = "url('img_tree.png')";
+
+// function replaceContentInContainer(target,source) {
+//     document.getElementById(target).innerHTML  = document.getElementById(source).innerHTML;
+//     document.getElementById(target).style.display = "flex";
+// }
+
+function toggle_visibility(target, source) {
+    var e = document.getElementById(target);
+    var x = document.getElementById(source);
+    if(x.style.display == 'flex') {
+        x.style.display = 'none';
+        e.style.display = 'flex';
+    }
+    else {
+        x.style.display = 'flex';
+        e.style.display = 'none';
+    }
+
 }
-/*targetClass*/

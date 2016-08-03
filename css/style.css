@@ -68,20 +68,10 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-    /*background-color: #169cff;*/
     color: white;
 }
 
-li a:first-child:hover {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-/*li a:hover {*/
-    /*color: #169cff;*/
-/*}*/
-
-.header-menu div, .sweets-clk div {
+.header-menu div {
     display: none;
 }
 
@@ -91,12 +81,6 @@ li a:first-child:hover {
     margin: 10px 0 0;
 }
 
-#home {
-    width: 81%;
-    height: 500px;
-    margin: 15px auto 0;
-    border: 0;
-}
 
 #sweets {
     flex-direction: row;
@@ -143,13 +127,7 @@ li a:first-child:hover {
     }
 }
 
-.page-sweets a {
-    display: block;
-    position: relative;
-    text-align: center;
-}
-
-.page-sweets > li {
+.page-sweets > li{
     margin: 0 auto;
     text-align: center;
     color: #FFFFFF;
@@ -177,8 +155,6 @@ li a:first-child:hover {
     height: 156px;
 }
 
-.sweets-clk div:target{
+#popup-cupcake {
     display: none;
-    width: 100%;
-    margin: 10px 0 0;
 }
