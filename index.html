@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,54 +17,70 @@
 				<ul>
 					<li><a id="home-btn" href="#home">בית</a></li>
 					<li><a id="sweets-btn" href="#sweets">מתוקים</a></li>
-				  	<li><a href="#food">אוכל</a></li>
+					<li><a id="food-btn" href="#food">אוכל</a></li>
 				</ul>
 
 				<span id="date_time"></span>
 			</nav>
-			<div id="home">
-				<ul>
-					<li>
-						test
-					</li>
-				</ul>
-			</div>
 
-			<div id="sweets" class="sweets-clk">
-				<ul class="page-sweets" id="sweets-icon">
-					<li><a>
-						<img id="cupcake" alt="" src='images/cupcake_filled.png'
-							 onmouseover="this.src='images/cupcake.png';"
-							 onmouseout="this.src='images/cupcake_filled.png';"
-							 href="#" onclick="toggle_visibility('popup-cupcake', 'sweets-icon');"/></a>עוגות</li>
-					<li><a href="#popup-cookies">
-						<img id="cookies" alt="" src="images/cookies_filled.png" onmouseover="this.src='images/cookies.png';"
-							 onmouseout="this.src='images/cookies_filled.png';" /></a>עוגיות</li>
-					<li><a href="#popup-mixer">
-						<img id="mixer" alt="" src="images/mixer_filled.png" onmouseover="this.src='images/mixer.png';"
-							 onmouseout="this.src='images/mixer_filled.png';" /></a>מיקסר</li>
-				</ul>
+			<div class="main-panel">
+				<div class="main-panel1" id="home">
+					<li>TEST</li>
+				</div>
 
-				<div id="popup-cupcake">
-					<ul id="list-body">
-						<li>עוגת בננות - קרין גורן</li>
-						<li>עוגיות סבתא</li>
-						<li>עוגת בסקוויטים מיתוקית</li>
+				<div id="sweets" class="main-panel1 sweets-clk">
+					<ul class="page-sweets" id="sweets-icon">
+						<li><a>
+							<img id="cupcake" alt="" src='images/cupcake_filled.png' onmouseover="this.src='images/cupcake.png';"
+								 onmouseout="this.src='images/cupcake_filled.png';"/></a>עוגות</li>
+						<li><a>
+							<img id="cookies" alt="" src="images/cookies_filled.png" onmouseover="this.src='images/cookies.png';"
+								 onmouseout="this.src='images/cookies_filled.png';"/></a>עוגיות</li>
+						<li><a>
+							<img id="mixer" alt="" src="images/mixer_filled.png" onmouseover="this.src='images/mixer.png';"
+								 onmouseout="this.src='images/mixer_filled.png';"/></a>מיקסר</li>
+					</ul>
+
+
+					<!-cakes list->
+					<div id="popup-cupcake">
+						<div id="list-body">
+							<div id="table">
+
+							</div>
+						</div>
+					</div>
+
+					<!-cookies list->
+					<div id="popup-cookies">
+						<ul id="list-body1">
+
+						</ul>
+					</div>
+
+					<!-mixer list->
+					<div id="popup-mixer">
+						<ul id="list-body2">
+
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="main-panel1" id="food">
+					<ul>
+						<li>test3</li>
 					</ul>
 				</div>
 			</div>
-
-			<div id="food">
-				<ul>
-					<li>test3</li>
-				</ul>
-			</div>
 		</div>
 	</div>
-	<!--<script type="text/javascript"> window.onload = date_time();</script>-->
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 	<script src="main.js"></script>
-	<!--<script src="slider.js"></script>-->
+	<script src="sweets.js"></script>
+
 </body>
 </html>
 

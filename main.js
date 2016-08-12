@@ -47,23 +47,62 @@ function date_time()
 }
 /*new date*/
 
-/*targetClass*/
+$("#home-btn").click(function () {
+    $("#home").show();
+    $("#sweets").hide();
+    $("#food").hide();
+});
 
-// function replaceContentInContainer(target,source) {
-//     document.getElementById(target).innerHTML  = document.getElementById(source).innerHTML;
-//     document.getElementById(target).style.display = "flex";
-// }
+$("#sweets-btn").click(function () {
+    $("#sweets").show();
+    $("#home").hide();
+    $("#food").hide();
+});
 
-function toggle_visibility(target, source) {
-    var e = document.getElementById(target);
-    var x = document.getElementById(source);
-    if(x.style.display == 'flex') {
-        x.style.display = 'none';
-        e.style.display = 'flex';
+$("#food-btn").click(function () {
+    $("#food").show();
+    $("#home").hide();
+    $("#sweets").hide();
+});
+
+
+/*
+$("#sweets-btn").on("click", function () {
+    if (displayIsNone($("#sweets-icon"))) {
+        $("#sweets-icon").css("display", "flex");
+    } else {
+
     }
-    else {
-        x.style.display = 'flex';
-        e.style.display = 'none';
-    }
+})
 
-}
+$("#cupcake").on("click", function () {
+    $("#sweets-icon").css("display", "none");
+    $("#popup-cupcake").css("display", "block");
+})
+
+
+
+function displayIsNone (item) {
+    if (item.css('display') == 'none') {
+        return true;
+    }
+    else
+       return false;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
