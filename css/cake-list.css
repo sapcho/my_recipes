@@ -1,4 +1,4 @@
-.back {
+.back-sweets {
 	display: flex;
 	position: absolute;
 	bottom: 10px;
@@ -14,7 +14,6 @@
 	padding-top: 1%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
 .recipe-cupcakes {
@@ -35,7 +34,7 @@
 	color: #ffffff;
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
-	width: 90px;
+	width: 100px;
 	height: 50px;
 	margin: 10px;
 	text-align: center;

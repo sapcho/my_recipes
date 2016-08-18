@@ -56,23 +56,22 @@ $("#food-btn").click(function () {
 });
 /*menu options*/
 
-/*back button*/
-$(".back").click(function (event) {
-    var target = $( event.target );
-    if ( target.is( "button" ) ) {
+/*back sweets button*/
+$(".back-sweets").click(function (event) {
+    var target = $(event.target);
+    if (target.is("button")) {
         $('#popup-cupcake #recipe-item').empty();
         target.parent().hide();
         $("#sweets-icon").show();
     }
 });
-/*back button*/
+/*back sweets button*/
 
 /*sweets options*/
 $("#cupcake").click(function () {
     $("#popup-cupcake").show();
     $("#sweets-icon").hide();
 });
-
 /*sweets options*/
 
 

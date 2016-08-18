@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<link rel="stylesheet" type="text/css" href="css/cake-list.css">
 	<link rel="stylesheet" type="text/css" href="css/recipes.css">
+	<link rel="stylesheet" type="text/css" href="css/stopper.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,6 +24,29 @@
 				</ul>
 
 				<span id="date_time"></span>
+				<!--<a><img id="hourglass" src="images/icon_stopper/hourglass.png"></a>-->
+
+				<span dir="ltr" id="stopper">
+					<div class="stopper">
+						<h1></h1>
+						<span id="cd_h">00</span>:
+						<span id="cd_m">00</span>:
+						<span id="cd_s">00</span>:
+						<span id="cd_ms">00</span>
+						<br/>
+						<br/>
+						<input type="button" value="Start" id="cd_start"/>
+						<input type="button" value="Pause" id="cd_pause" />
+						<input type="button" value="Stop"  id="cd_stop" />
+						<input type="button" value="Reset" id="cd_reset" />
+						<br/>
+						<br/>
+						<input type="text" value="15" id="cd_seconds" />
+						secs
+						<br/>
+						<br/>
+					</div>
+				</span>
 			</nav>
 
 			<div class="main-panel">
@@ -50,7 +74,7 @@
 							<div id="cake-list"></div>
 							<div id="recipe-item"></div>
 						</div>
-						<button class="back">חזרה</button>
+						<button class="back-sweets">חזרה</button>
 					</div>
 
 
@@ -75,9 +99,11 @@
 	</div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
 
 	<script src="main.js"></script>
 	<script src="sweets.js"></script>
+	<script src="stopper.js"></script>
 
 </body>
 </html>

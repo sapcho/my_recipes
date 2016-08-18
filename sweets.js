@@ -6,7 +6,7 @@ var cupcakes = [{
 }, {
     name: "אינגליש קייק",
     img: "",
-    groceries: ["", "", ""],
+    groceries: ["גבינה", "סוכר"],
     description: ""
 }, {
     name: "עוגת גזר",
@@ -14,35 +14,15 @@ var cupcakes = [{
     groceries: ["כוס סוכר", "4-5 גזרים גדולים", "2 כוסות קמח תופח"],
     description: "להקציף ביצים ובהדרגה להוסיף קמח. בסוף לאפות ב-50 מעלות חום כ-40 דקות"
 }, {
-    name: "עוגת גזר",
+    name: "עוגת שוקולד",
     img: "",
-    groceries: ["", "", ""],
-    description: ""
+    groceries: ["כוס קמח", "כוס וחצי סוכר"],
+    description: "לערבב הכל ולתנור"
 }, {
-    name: "עוגת גזר",
+    name: "עוגה יבשה",
     img: "",
-    groceries: ["", "", ""],
-    description: ""
-}, {
-    name: "עוגת גזר",
-    img: "",
-    groceries: ["", "", ""],
-    description: ""
-}, {
-    name: "עוגת גזר",
-    img: "",
-    groceries: ["", "", ""],
-    description: ""
-}, {
-    name: "עוגת גזר",
-    img: "",
-    groceries: ["", "", ""],
-    description: ""
-}, {
-    name: "עוגת גזר",
-    img: "",
-    groceries: ["", "", ""],
-    description: ""
+    groceries: ["חלב", "סוכר", "קמח"],
+    description: "לערבב לאפות ולאכול"
 }];
 
 $(function () {
@@ -63,11 +43,17 @@ $(function () {
         var x = 0;
         cupcakes.forEach(function (obj) {
             if (x == itemIndex) {
-                console.log(cupcakes[x].name);
                 var name = '<h1 class="recipe-title">' + obj.name + '</h1>';
                 $('#popup-cupcake #recipe-item').append(name);
-                var img = '<a><img class="recipe-img" src="' + obj.img +  ' "></a>';
-                $('#popup-cupcake #recipe-item').append(img);
+                if ((obj.img).length) {
+                    var img = '<a><img class="recipe-img" src="' + obj.img + ' "></a>';
+                    $('#popup-cupcake #recipe-item').append(img);
+                }
+                else {
+                    console.log((obj.img).length);
+                    var img = '<a><img class="recipe-img" src="images/image-coming-soon.png"></a>';
+                    $('#popup-cupcake #recipe-item').append(img);
+                }
                 var gro = '<p class="recipe-gro"><u>מצרכים:</u><br>' + obj.groceries + '</p>';
                 $('#popup-cupcake #recipe-item').append(gro);
                 var des = '<p class="recipe-des"><u>הוראות הכנה:</u><br>' + obj.description + '</p>';
