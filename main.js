@@ -1,18 +1,3 @@
-/*date
-document.getElementById("para1").innerHTML = formatAMPM();
-
-function formatAMPM() {
-    var d = new Date(),
-        minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-        hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-        ampm = d.getHours() >= 12 ? 'pm' : 'am',
-        months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-        days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-    return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
-}
-*/
-
-
 /*new date*/
 document.getElementById("date_time").innerHTML = date_time();
 
@@ -47,6 +32,7 @@ function date_time()
 }
 /*new date*/
 
+/*menu options*/
 $("#home-btn").click(function () {
     $("#home").show();
     $("#sweets").hide();
@@ -57,6 +43,10 @@ $("#sweets-btn").click(function () {
     $("#sweets").show();
     $("#home").hide();
     $("#food").hide();
+    $(".recipes").hide();
+    $("#sweets-icon").show();
+    $('#popup-cupcake #recipe-item').empty();
+
 });
 
 $("#food-btn").click(function () {
@@ -64,36 +54,26 @@ $("#food-btn").click(function () {
     $("#home").hide();
     $("#sweets").hide();
 });
+/*menu options*/
 
-
-/*
-$("#sweets-btn").on("click", function () {
-    if (displayIsNone($("#sweets-icon"))) {
-        $("#sweets-icon").css("display", "flex");
-    } else {
-
+/*back button*/
+$(".back").click(function (event) {
+    var target = $( event.target );
+    if ( target.is( "button" ) ) {
+        $('#popup-cupcake #recipe-item').empty();
+        target.parent().hide();
+        $("#sweets-icon").show();
     }
-})
+});
+/*back button*/
 
-$("#cupcake").on("click", function () {
-    $("#sweets-icon").css("display", "none");
-    $("#popup-cupcake").css("display", "block");
-})
+/*sweets options*/
+$("#cupcake").click(function () {
+    $("#popup-cupcake").show();
+    $("#sweets-icon").hide();
+});
 
-
-
-function displayIsNone (item) {
-    if (item.css('display') == 'none') {
-        return true;
-    }
-    else
-       return false;
-}*/
-
-
-
-
-
+/*sweets options*/
 
 
 

@@ -1,0 +1,28 @@
+#recipe-item {
+    display: block;
+    padding: 10px;
+}
+
+.recipe-title {
+    font-size: 2em;
+    color: #ffffff;
+    display: flex;
+    margin-bottom: 20%;
+    margin-top: 0;
+}
+
+.recipe-img {
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow:5px 5px 5px #3e3636;
+    display: flex;
+    position: absolute;
+    left: 2%;
+    top: 5.5%;
+}
+
+.recipe-gro, .recipe-des {
+    color: #ffffff;
+    padding-top: 0.5px;
+}
