@@ -36,6 +36,18 @@ nav {
     width: 81%;
 }
 
+#left-menu {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+}
+
+#left-menu img {
+    margin-left: 10%;
+    width: 20px;
+    height: 20px;
+}
+
 #date_time {
     font-family: "Lato", sans-serif;
     display: flex;
@@ -83,6 +95,32 @@ li a:hover:not(.active) {
     margin: 10px 0 0;
 }
 
+#home {
+    display:block;
+
+    padding-top: 100px;
+    flex-direction: row;
+    align-content: center;
+    background: #169cff;
+    width: 81%;
+    height: 500px;
+    margin: 15px auto 0;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+#exampleSlider {
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+}
+
+#exampleSlider img {
+    border-radius: 20px;
+    border: 2px black solid;
+}
 
 #sweets {
     flex-direction: row;
@@ -166,7 +204,6 @@ li a:hover:not(.active) {
 
 #cupcake, #cookies, #mixer {
     cursor: pointer;
-
 }
 
 #home img{

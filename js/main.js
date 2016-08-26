@@ -25,7 +25,7 @@ function date_time()
     {
         s = "0"+s;
     }
-    var result = ''+days[day]+' '+months[month]+' '+d+' - '+h+':'+m+':'+s;
+    var result = /*''+days[day]+' '+months[month]+' '+d+' - '+*/h+':'+m+':'+s;
     document.getElementById('date_time').innerHTML = result;
     setTimeout('date_time("'+'date_time'+'");','1000');
     return true;

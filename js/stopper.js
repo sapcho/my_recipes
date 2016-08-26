@@ -7,6 +7,10 @@
  Any questions, suggestions? marc.fuehnen(at)gmail.com
 
  */
+$("#hourglass").click( function() {
+    $("#stopper").toggle("fast");
+});
+
 $(document).ready(function() {
     (function($) {
         $.extend({

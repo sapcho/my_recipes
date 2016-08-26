@@ -23,8 +23,11 @@
 					<li><a id="food-btn" href="#food">אוכל</a></li>
 				</ul>
 
-				<span id="date_time"></span>
-				<!--<a><img id="hourglass" src="images/icon_stopper/hourglass.png"></a>-->
+				<a id="left-menu">
+					<img id="hourglass" src="images/icon_stopper/hourglass.png">
+					<span id="date_time"></span>
+				</a>
+
 
 				<span dir="ltr" id="stopper">
 					<div class="stopper">
@@ -51,7 +54,11 @@
 
 			<div class="main-panel">
 				<div class="main-panel1" id="home">
-					<li>TEST</li>
+					<ul id="exampleSlider">
+						<li><img src="images/banana_bread.jpg" title="" /></li>
+						<li><img src="images/carrot_cake.jpg" title="" /></li>
+						<li><img src="images/savta_cookies.jpg" title="" /></li>
+					</ul>
 				</div>
 
 				<div id="sweets" class="main-panel1 sweets-clk">
@@ -80,7 +87,11 @@
 
 					<!-cookies list->
 					<div class="recipes" id="popup-cookies">
-
+						<div id="list-body">
+							<div id="cake-list"></div>
+							<div id="recipe-item"></div>
+						</div>
+						<button class="back-sweets">חזרה</button>
 					</div>
 
 					<!-mixer list->
@@ -101,9 +112,10 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
 
-	<script src="main.js"></script>
-	<script src="sweets.js"></script>
-	<script src="stopper.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/sweets.js"></script>
+	<script src="js/stopper.js"></script>
+	<script src="js/slider.js"></script>
 
 </body>
 </html>

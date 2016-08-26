@@ -19,15 +19,15 @@ input[type="text"] {
 .stopper {
     font-family: Arial, Verdana;
     font-size: 11px;
-    width: 130px;
-    height: 135px;
+    /* width: 130px; */
+    /* height: 135px; */
     background-color: #f2f2f2;
-    padding: 11px;
-    border: solid 1px #e5e5e5;
+    /* padding: 11px; */
+    /* border: solid 1px #e5e5e5; */
     text-align: center;
     margin: 0 0 1px 0;
-    top: 10px;
-    top: 6%;
+    /* top: 10px; */
+    /* top: 6%; */
     position: absolute;
     border-radius: 10px;
 }
